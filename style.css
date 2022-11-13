@@ -1,0 +1,366 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --dark: #222;
+  --grey: rgb(230, 226, 226);
+  --light: rgb(239, 236, 236);
+  --off-white: rgb(245, 242, 242);
+  --font-family: 'Fira Sans', sans-serif;
+  --font-family2: 'Roboto', sans-serif;
+  --font-family3: 'Montserrat', sans-serif;
+}
+
+
+h1{
+  font-size: 2.8rem;
+  font-weight: 600;
+  font-family: var(--font-family2);
+  
+}
+h2{
+  font-size: 2.53rem;
+  font-weight: 600;
+  font-family: var(--font-family3);
+
+}
+h3{
+  font-size: 2.33rem;
+  font-weight: 600;
+  font-family: var(--font-family3);
+ 
+}
+h4{
+  font-size: 1.9rem;
+  font-weight: 600;
+  font-family: var(--font-family3);
+}
+h5{
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: var(--font-family3);
+  
+}
+h6{
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: var(--font-family3);
+}
+p{
+  font-size: 1.1rem;
+}
+.card{
+  background-color:white;
+  padding: 1.2rem 1rem ;
+
+  box-shadow: 0.536rem 1.141rem 2.5rem  0  rgb(0 0 0 /9%);
+  border: 0;
+}
+
+a{
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+@media screen and (max-width:600px) {
+  h1{
+      font-size: 2.22rem;
+    
+  }
+  h2{
+      font-size: 2rem;
+  }
+  h3{
+      font-size: 1.72rem;
+  }
+  h4{
+      font-size: 1.5rem;
+  }
+  h5{
+      font-size: 1.3rem;
+  }
+  h6{
+      font-size: 1.07rem;
+  }
+  p{
+      font-size: 0.9rem;
+  }
+  .card{
+      padding: 1rem 0.8rem;
+  }
+  a{
+      font-size: 1rem;
+  }
+}
+
+
+/* nav design starts here */
+
+.container .navbar-brand{
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: var(--font-family);
+  text-decoration: none;
+}
+.container .navbar-toggle{
+  display: none;
+  position: fixed;
+}
+
+.container .side-icon{
+  font-size: 1.2rem;
+  border:none;
+  background-color: transparent;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  border-radius: 20%;
+  
+}
+.container .offcanvas  .side-img img{
+  max-width: 100%;
+  min-width: 30%;
+  border: 3px solid whitesmoke;
+  border-radius: 5%;
+  height: 220px;
+}
+.container .offcanvas .offcanvas-body .detials{
+  padding: 1rem 1.2rem;
+  margin: 1rem;
+}
+.container .offcanvas .offcanvas-body .social-media a{
+  margin: 5px;
+  padding: 5px;
+  font-size: 1.2rem;
+}
+@media screen and (max-width:770px) {
+  .navbar {
+    background-color: var(--dark);
+    color: white;
+    /* width: 100%; */
+  }
+  .container .navbar-toggle{
+    display: contents;
+
+  }
+  .container .side-icon{
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    font-size: 1rem;
+    margin: 3px;
+
+  }
+  .container .offcanvas  .side-img img{
+    height: 150px;
+  }
+  .container .offcanvas .offcanvas-body .detials{
+    padding: 1rem 0.9rem;
+    margin: -0.6rem;
+  }
+  .container .offcanvas .offcanvas-body .social-media a{
+    margin: 2px;
+    padding: 2px;
+    font-size: 1rem;
+  }
+  
+}
+/* navbar designs end here */
+
+/* banner design starts here */
+.banner-wrapper{
+  background-image: url("image/header-area1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 770px;
+  /* filter: brightness(70%); */
+}
+.banner-wrapper .btn{
+  border-radius: 35px;
+  padding: 10px 25px;
+  margin: 10px;
+  text-decoration: none;
+}
+@media screen and (max-width:600px) {
+  .banner-wrapper .btn{
+    border-radius: 25px;
+    padding: 5px 15px;
+    font-size: 0.8rem;
+  }
+}
+/* banner design ends here */
+
+/* about design starts here */
+.about-wrapper .about-img img {
+  border: 3px solid var(--off-white);
+  border-radius: 3px;
+  width: 70%;
+}
+@media screen and (max-width:600px) {
+  .about-wrapper .btn{
+    font-size: 0.86rem;
+    padding: 5px 0;
+  }
+}
+/* about design ends here */
+
+/* hire design starts here */
+.hire-wrapper{
+  background-image: url("image/hire-area.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+}
+.hire-wrapper .btn{
+  border-radius: 35px;
+  padding: 10px 25px;
+  margin: 10px;
+  text-decoration: none;
+}
+@media screen and (max-width:600px) {
+  .hire-wrapper .btn{
+    border-radius: 25px;
+    padding: 5px 15px;
+    font-size: 0.8rem;
+  }
+}
+/* hire design ends here */
+
+/* portfolio design starts here */
+.portfolio-wrapper .card{
+  padding: 1.2rem 1rem ;
+  border: 0;
+}
+.portfolio-wrapper .card:hover{
+  opacity: 0.7;
+}
+/* portfolio design ends here */
+
+/* client design starts here */
+.client .carousel-caption{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2.2rem 1.8rem ;
+}
+.client .client-img img{
+  border:1px solid black;
+  border-radius: 60%;
+  height: 4rem;
+}
+.client .client-body .nam{
+  font-size:0.9rem;
+}
+.client .client-body .para{
+  font-size:0.9rem;
+}
+
+.bsimg{
+  height: 600px;
+  width: 100%;
+}
+
+@media screen and(max-width:600px) {
+  .client .carousel-caption{
+    margin: 0.7rem;
+    padding: 0.7rem ;
+    
+  }
+
+  .client .carousel-caption .hire-title{
+    font-size: 1.3rem;
+  }
+
+   .hire-description{
+    text-align: center;
+  }
+  .client .client-img img{
+  border-radius: 80%;
+  height: 1.2rem;
+  }
+  .client .client-body .nam{
+    font-size:0.5rem;
+  }
+  .client .client-body .para{
+    font-size:0.5rem;
+  }
+  .bsimg{
+    height: 200px;
+    width: 100%;
+    object-fit: contain;
+  }
+
+
+  /* .client .client-img img{
+    border:1px solid black;
+    border-radius: 80%;
+    height: 0.6rem;
+  }
+  .client .client-body .nam{
+    font-size:0.6rem;
+  }
+  .client .client-body .para{
+    font-size:0.6rem;
+  }
+   */
+}
+
+/* client design ends here */
+
+/* blog design starts here */
+.blog-wrapper .blog-img img{
+  border:1px solid white;
+  border-radius: 80%;
+  height: 2.8rem;
+}
+.blog-wrapper .blog-des{
+  font-size: 0.86rem;
+
+}
+.blog-wrapper .blog-body .blogger-nam{
+  font-size:0.85rem;
+}
+.blog-wrapper .blog-body .blog-para{
+  font-size: 0.8rem;
+}
+/* blog design ends here */
+
+/* contact design starts here */
+.contact-wrapper .btn{
+  padding: 7px 15px;
+}
+.contact-wrapper .contact-des{
+  font-size: 1rem;
+}
+.contact-wrapper .contact-title{
+  font-weight: 600;
+}
+.contact-wrapper .contact-des1{
+  font-size: 0.88rem;
+}
+/* contact design ends here */
+
+
+/* footer design start here */
+.footer-wrapper1 .footer-des{
+  font-size: 0.96rem;
+}
+.footer-wrapper1 .footer-des a{
+  font-size: 0.9rem;
+}
+.footer-wrapper1 .footer-icon{
+  font-size: 1.1rem;
+  margin-bottom: 7px;
+}
+@media screen and (max-width:600px) {
+  .footer-wrapper1 .footer-icon{
+    font-size: 0.93rem;
+    margin-bottom: 4px;
+  }
+}
