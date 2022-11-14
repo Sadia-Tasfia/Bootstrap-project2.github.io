@@ -44,7 +44,7 @@ h5{
   
 }
 h6{
-  font-size: 1.2rem;
+  font-size: 1.24rem;
   font-weight: 600;
   font-family: var(--font-family3);
 }
@@ -60,7 +60,7 @@ p{
 }
 
 a{
-  font-size: 1.2rem;
+  font-size: 1.07rem;
   text-decoration: none;
 }
 a:hover{
@@ -93,7 +93,7 @@ a:hover{
       padding: 1rem 0.8rem;
   }
   a{
-      font-size: 1rem;
+      font-size: 0.9rem;
   }
 }
 
