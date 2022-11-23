@@ -200,6 +200,9 @@ a:hover{
   width: 70%;
 }
 @media screen and (max-width:600px) {
+.about-wrapper .about-img img {
+  margin-bottom: 10px;
+  }
   .about-wrapper .btn{
     font-size: 0.86rem;
     padding: 5px 0;
@@ -295,20 +298,6 @@ a:hover{
     width: 100%;
     object-fit: contain;
   }
-
-
-  /* .client .client-img img{
-    border:1px solid black;
-    border-radius: 80%;
-    height: 0.6rem;
-  }
-  .client .client-body .nam{
-    font-size:0.6rem;
-  }
-  .client .client-body .para{
-    font-size:0.6rem;
-  }
-   */
 }
 
 /* client design ends here */
